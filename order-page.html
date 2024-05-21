@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page | Green Store</title>
+  <!--link css files-->
+  <link rel="stylesheet" href="order-page-style.css">
+  <link rel="icon" href="images/store-logo.webp" type="image/x-icon">
+  <!--google fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!--fontawsome i icons links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="manifest" href="https://progressier.app/MFNqapszg3vJGQKkWfwv/progressier.json"/>
+  <script defer src="https://progressier.app/MFNqapszg3vJGQKkWfwv/script.js"></script> 
+
+</head>
+
+<body>
+
+  <!--CREATE HEADER AND NAV BAR-->
+  <header>
+    <nav>
+      <div>
+        <a href="homepage.html"><img src="images/logo1.webp" alt="store-logo"></a>
+      </div>
+
+
+
+      <ul> <!--nav bar links-->
+        <li>
+          <a href="index.html" target="_self">Home</a>
+          <a href="About-us.html" target="_self">About us</a>
+          <a href="vegetables-product-page.html" target="_self">Vegetables</a>
+          <a href="cosmetic-product-page.html" target="_self">Cosmetics</a>
+          <a href="diary-products-page.html" target="_self">Dairy product</a>
+          <a href="order-page.html" target="_blank">Order</a>
+          <a href="registration-page.html" target="_self">Register now</a>
+
+        </li>
+
+      </ul>
+
+      <section class="login-section-in-header">
+        <a href="#">
+          <buton>Login-Signup</buton>
+        </a>
+      </section>
+
+    </nav>
+
+    <!--CREATE SEARCH BAR-->
+    <section class="searchbar-section">
+
+      <input type="text" placeholder="search what you want">
+
+
+      <img src="images/s1.webp" alt="searchbar icon">
+
+    </section>
+
+  </header>
+
+  <!--hamburger menu on mobile responsive-->
+  <section class="hamburger-sec">
+    <label>
+      <input class="input-boss" type="checkbox">
+      <div class="toggle">
+        <span class="top-line common"></span>
+        <span class="middle-line common"></span>
+        <span class="bottom-line common"></span>
+      </div>
+      <div class="slide">
+        <h1>Menu</h1>
+        <ul> <!--hmaburger menu links-->
+          <li> <a href="index.html" target="_self">Home</a></li>
+          <li> <a href="About-us.html" target="_self">About us</a></li>
+          <li> <a href="vegetables-product-page.html" target="_self">Vegetable Products</a></li>
+          <li> <a href="diary-products-page.html" target="_self">Dairy products</a></li>
+          <li> <a href="cosmetic-product-page.html" target="_self">Cosmetic products</a></li>
+          <li> <a href="order-page.html" target="_self">Order Now</a></li>
+          <li> <a href="registration-page.html" target="_self">Loyalty registration</a></li>
+          
+        </ul>
+      </div>
+     </label>
+         <div class="hamburger-menu-i-cart">  
+          <i class="fa-solid fa-cart-plus"></i>
+          </div>
+     </section>
+
+  <!--order page background image-->
+  <section class="order-bg-image">
+
+    <img src="order page imags/opbg.webp" alt="main-order-page-image">
+    
+    <div class="info-on-background-image">
+      <h1>Green Store Orders</h1>
+    <h3>Order now Your Items...</h3>
+    <span> Claim Special Offers</span>
+    </div>
+
+    
+    
+  </section>
+
+  <!--create order form-->
+
+  <!--order form heading section-->
+  <div class="order-form-heading"> 
+    <h3>Fill the order form below to complete your order</h3>
+  </div>
+
+  <!--create  form-->
+  <!--forms main section-->
+  <section class="main-container-order">
+
+    <section class="Container-order"> <!--first form create-->
+
+      <section class="form-1"> <!--basic information form-->
+
+        <h3 class="besic-info-form-heading">1.Your Basic Information</h3>
+
+        <form action="">
+          <section class="first-name-div">
+            <input type="text" name="name" id="name" placeholder="First Name" required>
+            <input type="text" name="name" id="name" placeholder="Last Name" required> <br> <br>
+          </section>
+
+          <section class="email-div">
+            <input type="email" name="email" id="email" placeholder="Email Adress" required> <br> <br>
+          </section>
+
+          <section class="company-name-div">
+            <input type="text" name="company/ur-name" id="company/ur-name" placeholder="Company Name">
+          </section>
+
+
+
+        </form>
+
+      </section>
+
+      <section class="form-1"> <!--biling address-->
+
+        <h3 class="billing-address-form-heading">2.Billing Address</h3>
+
+        <form action="">
+
+          <section class="street-div">
+            <input type="text" name="street" id="street" placeholder="Street" required> <br> <br>
+          </section>
+
+          <section class="city-div">
+            <input type="text" name="city" id="city" placeholder="City"> <br> <br>
+
+          </section>
+
+          <section class="zip-code-div">
+            <input type="text" name="Zip" id="Zip" placeholder="Zip">
+
+
+          </section>
+
+          <section class="code-div">
+            <input type="text" name="code" placeholder="Code">
+          </section>
+
+        </form>
+      </section>
+
+      <section class="form-1"> <!--Your payment information-->
+        <h3 class="payment-info-form-heading">3.Your Payment Information</h3>
+
+
+        <h4 class="text-card-numbers-heading">Test Card Numbers: <mark>Success | Payment Failure</mark> </h4>
+        <form action="">
+
+
+          <section class="month-year-cvv-div">
+
+            <input type="text" name="payment-card-number" placeholder="Credit Card Number"> <br> <br>
+          </section>
+
+          <section class="name-month-year">
+            <select name="month" id="month">
+              <option value="">Month</option>
+            </select>
+
+            <select name="Year" id="Year">
+              <option value="">Year</option>
+            </select>
+          </section>
+
+          <section class="cvv-div">
+            <input type="text" name="cvv" placeholder="CVN" required>
+          </section>
+
+
+
+        </form>
+
+        <span class="privacy-span"><input type="checkbox"> Clicking Checkout Now You Are agree to the<mark>Term of Service</mark> and
+          <mark>Privacy Policy.</mark></span> <br>
+
+        <section class="checkout-btn">
+          <a href=""><input type="submit" value="Checkout"></a>
+
+        </section>
+
+        <span class="safe-span">safe and secure payment checkout.</span>
+      </section>
+
+
+
+    </section>
+
+    <section class="side-table"> <!--buying items show table-->
+      <div>
+        <table class="purchase-item-list">
+          <thead>
+            <tr>
+              <th>Purchase Details</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grocery Combo Specials<br> x1</td>
+              <td>RS.500.00</td>
+            </tr>
+            <tr>
+              <td>Grocery Combo Specials<br> x1</td>
+              <td>RS.500.00</td>
+            </tr>
+            <td>Grocery Combo Specials<br> x1</td>
+            <td>RS.500.00</td>
+            </tr>
+            <tr>
+              <td class="highlight-td">Setup Fee</td>
+              <td class="highlight-td">RS.10.00</td>
+            </tr>
+            <tr>
+              <td class="highlight-td">Total</td>
+              <td class="highlight-price">RS.1510.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section class="grocery-combo-img"> <!--buying items show main section-->
+
+          <h3 class="order-details-heading">Order Details</h3>
+  
+          <img src="order page imags/gs.webp" alt="grocery-bag-image">
+  
+          <ul>  <!--buying items list-->
+            <li>Combo Of Household essentials</li>
+            <li>500g Of Tomato</li>
+            <li>1l Milk Botttle</li>
+            <li>Bread</li>
+            <li>500g Potato</li>
+          </ul>
+
+        </section>
+        
+      </div>
+
+    </section>
+
+  </section>
+
+ <!--CREATE FOOTER AREA-->
+
+ <footer>
+  <!--footer main section-->
+  <section class="main-section">
+
+    <section class="mobile-times"> <!--mobile info section-->
+
+      <i class="fa-solid fa-phone"></i> <span class="mobile-number">+94 72 2345 67</span>
+      <span class="times">
+        (everyday opening at 8.30a.m to 9.30p.m)
+      </span>
+
+    </section>
+
+    <section class="quick-check-links"> <!--quick check links section-->
+
+      <h4>Quick links</h4> <!--quick check links heading-->
+
+      <ol type="I"> <!--quick check links-->
+        <li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="vegetables-product-page.html" target="_self">Vegetables</a></li>
+        <li><a href="cosmetic-product-page.html" target="_self">Cosmetics products</a></li>
+        <li><a href="diary-products-page.html" target="_self">dairy products</a></li>
+        <li><a href="order-page.html" target="_blank">Order Now</a></li>
+        <li><a href="registration-page.html" target="_self">Register</a></li>
+        </ul>
+
+    </section>
+
+    <section class="customer-service"> <!--customer service links section-->
+
+      <h4>Customer services</h4>  <!--customer service links heading-->
+      <ul>
+        <li><a href="About-us.html" target="_self">About us</a></li>
+        <li><a href="registration-page.html" target="_self">Loyalty programme</a></li>
+      </ul>
+
+    </section>
+
+    <section class="social-midea-links"> <!--socal media links section-->
+
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </section>
+
+  </section>
+
+
+  <!--copyright section-->
+  
+  <!--main copyrigth section-->
+  <section class="last-footer-section">
+
+    <section class="copyright-span"> <!--copyrigth span section-->
+      <span>Copyright © 2024 GSN Digital Services (Pvt) Ltd. All Rights Reserved</span>
+    </section>
+
+    <section class="pay-methodes"> <!--pay methodes i section-->
+      <i class="fa-brands fa-cc-paypal"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-cc-amazon-pay"></i>
+      <i class="fa-brands fa-cc-visa"></i>
+    </section>
+
+  </section>
+  
+</footer>
+
+</body>
+
+</html>
